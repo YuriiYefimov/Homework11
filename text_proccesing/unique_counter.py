@@ -32,4 +32,4 @@ def how_many_uniq_words(story):
     return (result_in_dict)
 
 
-how_many_uniq_words(story)
+print(how_many_uniq_words(story))
