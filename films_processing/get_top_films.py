@@ -2393,12 +2393,12 @@ imdb_rank = [
 def films_filter(film):
   f_list = []
   for i in imdb_rank:
-    if float(i["rating"]) >= 8.5:
+    if float(i["rating"]) >= film:
       f_list.append(i["title"])
   return (choice(f_list))
 
 
-print(films_filter(8.5))
+print(films_filter(8.2))
 
 
-print(how_many_uniq_words(films_filter(8.5)))
+print(how_many_uniq_words(films_filter(8.2)))
